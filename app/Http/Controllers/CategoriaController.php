@@ -18,7 +18,7 @@ class CategoriaController extends Controller
         // Retornar a view com o cookie
         return response()
             ->view('categorias.index', compact('categorias'))
-            ->cookie('ultima_categoria_acessada', $dataAtual, 60 * 24 * 7); // Cookie válido por 7 dias
+            ->cookie('ultima_categoria_acessada', $dataAtual, 60 * 24 * 7);
     }
 
     // Criar nova categoria
